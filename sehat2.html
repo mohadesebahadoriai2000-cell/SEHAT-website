@@ -21,14 +21,11 @@
 
     <!-- Header -->
     <header>
-
-        <img src="logo.png.png" alt="لوگوی SEHAT Automation" width="180">
-
+        <img src="logo.png.png" alt="لوگوی SEHAT Automation" class="logo" >
         <h1>SEHAT Automation</h1>
-
         <nav>
 
-            <a href="#">خانه</a>
+            <a href="#" class="active">خانه</a>
 
             <a href="#">مقالات</a>
 
@@ -40,8 +37,8 @@
 
             <a href="#">تماس با ما</a>
 
-        </nav>
-
+         </nav>
+           
     </header>
 
     <!-- Hero -->
@@ -53,9 +50,10 @@
             مرجع آموزش تجهیزات، سیستم‌های کنترل و فرآیندهای صنعت نفت، گاز و پالایشگاه
         </p>
 
-        <button>مشاهده مقالات</button>
-
-        <button>شروع یادگیری</button>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">شروع یادگیری</a>
+          <a href="#" class="btn btn-outline">مشاهده مقالات</a>
+       </div>
 
     </section>
 
@@ -81,9 +79,9 @@
 
             <article class="card">
 
-                <img src="flare.jpg" alt="کاهش دود فلر">
-
-                <h3>کاهش دود فلر به روش Air Assisted Flare</h3>
+                <img src="flare.jpg" alt="flare">
+                <div class="card-content">
+                <h3>کاهش دود فلر </h3>
 
                 <p>
                     بررسی عملکرد سیستم Air Assist و نقش آن در کاهش دود فلر.
@@ -91,12 +89,14 @@
 
                 <a href="#">مطالعه مقاله</a>
 
+                </div>
             </article>
 
             <article class="card">
 
                 <img src="dcs.jpg" alt="سیستم DCS">
 
+                <div class="card-content">
                 <h3>آشنایی با سیستم DCS</h3>
 
                 <p>
@@ -105,12 +105,13 @@
 
                 <a href="#">مطالعه مقاله</a>
 
+                </div>
             </article>
 
             <article class="card">
 
                 <img src="utility.jpg" alt="واحدهای Utility">
-
+                <div class="card-content">
                 <h3>واحدهای Utility پالایشگاه</h3>
 
                 <p>
@@ -119,6 +120,7 @@
 
                 <a href="#">مطالعه مقاله</a>
 
+                </div>
             </article>
 
         </div>
