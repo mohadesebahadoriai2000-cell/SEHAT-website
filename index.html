@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -75,7 +77,7 @@
                 </a>
 
                 <a href="#" class="btn btn-outline">
-                    <i class="fa-regular fa-file-lines"></i>
+                    <i class="fa-solid fa-chalkboard-user"></i>
                     مشاهده دوره ها
                 </a>
 
@@ -106,9 +108,9 @@
             </div>
 
             <div class="stat-item">
-                 <i class="fa-solid fa-toolbox"></i>
-                <h3>+100</h3>
-                <p>ابزار صنعتی</p>
+                 <i class="bi bi-clock-history"></i>
+                <h3>70</h3>
+                <p>ساعت آموزش</p>
             </div>
 
         </div>
@@ -120,17 +122,64 @@
     <!-- About -->
     <section id="about">
         <div class="container"> 
-        <h2>چرا SEHAT Automation؟</h2>
-
-        <p>
-            هدف ما ارائه آموزش‌های تخصصی، کاربردی و قابل فهم در حوزه مهندسی کنترل،
-            اتوماسیون صنعتی و تجهیزات پالایشگاهی است تا دانشجویان و مهندسان بتوانند
-            دانش خود را به تجربه تبدیل کنند.
-        </p>
+            <div class="section-title">
+                <h2>چرا SEHAT Automation؟</h2>
+                <span></span>
+            </div>
+            <!-- About محتوای تخصصی -->
+            <div class="features">
+                <div class="feature">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>محتوای تخصصی</h3>
+                    <p>
+                        محتوای آموزشی طراحی شده توسط مهندسین شاغل در صنعت
+                    </p>
+                </div>
+                <!-- About آموزش کاربردی-->
+                <div class="feature">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <h3>آموزش کاربردی</h3>
+                    <p>
+                        آموزش های عملی و پروژه محور متناسب با نیاز بازار کار
+                    </p>
+                </div>
+                <!-- About به روز و معتبر -->
+                <div class="feature">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>به روز و معتبر</h3>
+                    <p>
+                        بروزرسانی مداوم دوره ها مطابق استاندارهای صنعتی
+                    </p>
+                </div>
+                <!-- About پشتیبانی تخصصی -->
+                <div class="feature">
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>پشتیبانی تخصصی</h3>
+                    <p>
+                        پشتیبانی و پاسخگویی توسط تیم مهندسی در کنار شما
+                    </p>
+                </div>
+                <!-- About دسترسی دائمی -->
+                <div class="feature">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <h3>دسترسی دائمی</h3>
+                    <p>
+                        دسترسی نامحدود به محتواها در هر زمان
+                    </p>
+                </div>
+                 <!-- About مسیر شغلی -->
+                <div class="feature">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h3>مسیر شغلی</h3>
+                    <p>
+                        کمک به رشد مهارت و ورود موفق به بازار کار
+                    </p>
+                </div>
+            </div>
 </div>
     </section>
 
-    <!-- Articles -->
+    <!-- Articles 
     <section id="articles">
 
         <h2>جدیدترین آموزش‌ها</h2>
@@ -187,7 +236,170 @@
 
     </section>
 
-    <!-- Categories -->
+
+    -----------------------------css-----------------------------------
+    .cards{
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 340px;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+
+}
+.card-content{
+    padding: 20px;
+}
+.card:hover{
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    display: block;
+    transition: .5s;
+}
+.card:hover img{
+    transform: scale(1.08);
+}
+
+-->
+
+
+<!----------دوره های آموزشی ---------------------->
+<section id="courses">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>دوره‌های آموزشی</h2>
+
+            <p>جدیدترین و محبوب‌ترین دوره‌های ما</p>
+
+        </div>
+
+        <div class="course-wrapper">
+
+            <!-- Card 1 -->
+            <article class="course-card">
+
+                     <div class="course-image">
+
+                        <img src="images/oil_and_gas_industry.JPG" alt="oil and gas industry">
+
+                        <span class="badge">تازه</span>
+
+                    </div>
+
+                    <div class="course-content">
+
+                            <h3>آشنایی با صنعت نفت و گاز</h3>
+
+                            <p>مقدماتی تا پیشرفته</p>
+
+                            <div class="course-info">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                     70 ساعت
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-user"></i>
+                                     مهندس صحتی
+                                </span>
+
+                            </div>
+
+                    </div>
+
+            </article>
+           
+            
+
+            <!-- Card 2 -->
+
+            <article class="course-card">
+
+            </article>
+
+            <!-- Card 3 -->
+
+            <article class="course-card">
+
+            </article>
+
+            <!-- Card 4 -->
+
+            <article class="course-card">
+
+            </article>
+            <!-- Card 5 -->
+
+            <article class="course-card">
+
+            </article>
+
+                   </div>
+
+                </div>
+
+            </section>
+
+
+<!-- cta -->
+   <section id="cta">
+
+    <div class="container">
+
+        <div class="cta-box">
+
+            <div class="cta-content">
+
+
+                <h2>
+                    آماده ارتقای دانش مهندسی خود هستید؟
+                </h2>
+
+                <p>
+                    با دوره‌های تخصصی، مقالات کاربردی و آموزش‌های پروژه‌محور،
+                    مسیر حرفه‌ای خود را در صنعت نفت، گاز و اتوماسیون آغاز کنید.
+                </p>
+                
+            </div>
+            <div class="cta-buttons">
+                     <a href="#" class="cta-btn">
+
+                            <span class="arrow">
+                                <i class="fa-solid fa-arrow-left"></i>
+                             </span>
+
+                                     شروع یادگیری
+
+                      </a>
+                </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- Categories -->
     <section id="categories">
 
         <h2>دسته‌بندی‌ها</h2>
@@ -214,41 +426,7 @@
 
     </section>
 
-    <!-- Statistics -->
-    <section id="stats">
-
-        <h2>آمار SEHAT Automation</h2>
-
-        <div class="stats-container">
-
-            <div class="stat">
-
-                <h3>10K+</h3>
-
-                <p>مهندس و دانشجو</p>
-
-            </div>
-
-            <div class="stat">
-
-                <h3>11</h3>
-
-                <p>مقاله آموزشی</p>
-
-            </div>
-
-            <div class="stat">
-
-                <h3>50+</h3>
-
-                <p>ویدئوی آموزشی</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
+   
     <!-- About Brand -->
     <section id="brand">
 
