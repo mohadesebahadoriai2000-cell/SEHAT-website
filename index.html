@@ -16,40 +16,49 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
 
-    <!-- Announcement 
-    <section id="announcement">
-        <p>جدیدترین آموزش: کاهش دود فلر به روش Air Assisted Flare منتشر شد.</p>
-    </section>
-    -->
+<body id="top">
 
-    <!-- Header -->
+    
+
+    <!--====================== Header ===============================-->
     <header>
-        <div class="container header-container">
-            
-        <img src="images/logo.PNG" alt="لوگوی SEHAT Automation" class="logo" >
-       
-        
-        <nav>
 
-            <a href="#" class="active">خانه</a>
+<div class="container header-container">
 
-            <a href="#">مقالات</a>
+    <img src="images/logo.PNG" 
+         alt="لوگوی SEHAT Automation" 
+         class="logo">
 
-            <a href="#">دوره‌های آموزشی</a>
 
-            <a href="#">تجهیزات پالایشگاهی</a>
+    <!-- Mobile Menu Button -->
+    <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-            <a href="#">درباره ما</a>
 
-            <a href="#">تماس با ما</a>
+    <nav class="main-nav">
 
-         </nav>
-           </div>
-    </header>
+        <a href="#" class="active">خانه</a>
 
-    <!-- Hero -->
+        <a href="#">مقالات</a>
+
+        <a href="#">دوره‌های آموزشی</a>
+
+        <a href="#">تجهیزات پالایشگاهی</a>
+
+        <a href="#">درباره ما</a>
+
+        <a href="#">تماس با ما</a>
+
+    </nav>
+
+
+</div>
+
+</header>
+
+    <!--========================= Hero==================================== -->
     <section id="hero">
     <div class="container">
         <div class="hero-content">
@@ -57,9 +66,11 @@
                 مرجع تخصصی آموزش
             </span>
             <h1>
-                <span> مهندسی کنترل و اتوماسیون</span>
+                <span>مهندسی کنترل</span>
                 <br>
-                صنعت نفت و گاز
+                <span>و اتوماسیون</span>
+                <br>
+                <small>صنعت نفت و گاز</small>
             </h1>
 
             <p>
@@ -119,7 +130,7 @@
 
 </section>
 
-    <!-- About -->
+    <!--===================================== About ==================================-->
     <section id="about">
         <div class="container"> 
             <div class="section-title">
@@ -179,109 +190,9 @@
 </div>
     </section>
 
-    <!-- Articles 
-    <section id="articles">
+    
 
-        <h2>جدیدترین آموزش‌ها</h2>
-
-        <div class="cards">
-
-            <article class="card">
-
-                <img src="images/flare.jpg" alt="flare">
-                <div class="card-content">
-                <h3>کاهش دود فلر </h3>
-
-                <p>
-                    بررسی عملکرد سیستم Air Assist و نقش آن در کاهش دود فلر.
-                </p>
-
-                <a href="#">مطالعه مقاله</a>
-
-                </div>
-            </article>
-
-            <article class="card">
-
-                <img src="images/dcs.jpg" alt="سیستم DCS">
-
-                <div class="card-content">
-                <h3>آشنایی با سیستم DCS</h3>
-
-                <p>
-                    معرفی سیستم کنترل توزیع‌شده در پالایشگاه.
-                </p>
-
-                <a href="#">مطالعه مقاله</a>
-
-                </div>
-            </article>
-
-            <article class="card">
-
-                <img src="images/utility.jpg" alt="واحدهای Utility">
-                <div class="card-content">
-                <h3>واحدهای Utility پالایشگاه</h3>
-
-                <p>
-                    بررسی واحدهای پشتیبانی و خدمات پالایشگاه.
-                </p>
-
-                <a href="#">مطالعه مقاله</a>
-
-                </div>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    -----------------------------css-----------------------------------
-    .cards{
-
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-
-}
-
-.card{
-    width: 340px;
-    background: #fff;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition:
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-
-}
-.card-content{
-    padding: 20px;
-}
-.card:hover{
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
-    display: block;
-    transition: .5s;
-}
-.card:hover img{
-    transform: scale(1.08);
-}
-
--->
-
-
-<!----------دوره های آموزشی ---------------------->
+<!--===========================course=============================-->
 <section id="courses">
 
     <div class="container">
@@ -333,37 +244,186 @@
            
             
 
-            <!-- Card 2 -->
-
-            <article class="course-card">
-
-            </article>
-
-            <!-- Card 3 -->
-
-            <article class="course-card">
-
-            </article>
-
-            <!-- Card 4 -->
-
-            <article class="course-card">
-
-            </article>
-            <!-- Card 5 -->
-
-            <article class="course-card">
-
-            </article>
-
+           
                    </div>
 
                 </div>
 
             </section>
 
+<!--================================ resources=============================-->
 
-<!-- cta -->
+ <section id="resources">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>منابع رایگان</h2>
+
+            <p>مقالات، جزوات و فایل‌های PDF تخصصی مهندسی کنترل و اتوماسیون</p>
+
+        </div>
+
+        <div class="resources-grid">
+
+            <!-- Card -->
+
+            <div class="resource-card">
+
+                <div class="pdf-icon">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                </div>
+
+                <h3>آشنایی با سیستم DCS</h3>
+
+                <p>
+
+                    معرفی کامل سیستم کنترل توزیع شده و نحوه عملکرد آن در پالایشگاه‌ها.
+
+                </p>
+
+                <div class="file-info">
+
+                    <span>
+
+                        <i class="fa-regular fa-file-lines"></i>
+
+                        ۳۵ صفحه
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-solid fa-hard-drive"></i>
+
+                        2.4 MB
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="download-btn">
+
+                    دانلود رایگان
+
+                    <i class="fa-solid fa-download"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Card -->
+
+            <div class="resource-card">
+
+                <div class="pdf-icon">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                </div>
+
+                <h3>اصول ابزار دقیق</h3>
+
+                <p>
+
+                    معرفی سنسورها، ترانسمیترها و تجهیزات ابزار دقیق در صنعت.
+
+                </p>
+
+                <div class="file-info">
+
+                    <span>
+
+                        <i class="fa-regular fa-file-lines"></i>
+
+                        ۴۸ صفحه
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-solid fa-hard-drive"></i>
+
+                        3.1 MB
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="download-btn">
+
+                    دانلود رایگان
+
+                    <i class="fa-solid fa-download"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- resource-card -->
+
+            <div class="resource-card">
+
+                <div class="pdf-icon">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                </div>
+
+                <h3>Fire & Gas System</h3>
+
+                <p>
+
+                    آشنایی کامل با سیستم‌های اعلام و اطفاء حریق در پالایشگاه.
+
+                </p>
+
+                <div class="file-info">
+
+                    <span>
+
+                        <i class="fa-regular fa-file-lines"></i>
+
+                        ۵۲ صفحه
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-solid fa-hard-drive"></i>
+
+                        4.5 MB
+
+                    </span>
+
+                </div>
+
+                <a href="#" class="download-btn">
+
+                    دانلود رایگان
+
+                    <i class="fa-solid fa-download"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--============================================
+                     CTA
+================================================ -->
+
    <section id="cta">
 
     <div class="container">
@@ -374,7 +434,7 @@
 
 
                 <h2>
-                    آماده ارتقای دانش مهندسی خود هستید؟
+                    آماده ورود به دنیای اتوماسیون صنعتی هستید؟
                 </h2>
 
                 <p>
@@ -399,63 +459,191 @@
     </div>
 
 </section>
-<!-- Categories -->
-    <section id="categories">
 
-        <h2>دسته‌بندی‌ها</h2>
 
-        <ul>
 
-            <li>سیستم فلر</li>
+<!-- ================================================
+                   FOOTER BANNER
+===================================================-->
+  
 
-            <li>توربین گازی</li>
+<section class="footer-banner">
 
-            <li>مخازن ذخیره</li>
+    <div class="container">
 
-            <li>Fire & Gas</li>
+        <h2>Knowledge • Experience • Trust</h2>
 
-            <li>ابزار دقیق</li>
+        <p>
+            مرجع تخصصی آموزش مهندسی کنترل، اتوماسیون و تجهیزات صنعت نفت، گاز و پتروشیمی
+        </p>
 
-            <li>کنترل فرآیند</li>
+    </div>
 
-            <li>Utility</li>
+</section>
 
-            <li>PLC و DCS</li>
 
-        </ul>
 
-    </section>
+<!------------FOOTER-------------->
 
-   
-    <!-- About Brand -->
-    <section id="brand">
+<footer>
+    <!-- دکمه بازگشت به بالا -->
+    <a href="#top" class="back-top">
 
-        <h2>درباره ما</h2>
+        <i class="fa-solid fa-arrow-up"></i>
 
-        <article>
+    </a>
 
-            <h3>SEHAT Automation</h3>
+    <div class="container">
 
-            <p>آموزش مهندسی برای مهندسان آینده</p>
+        <div class="footer-grid">
 
-            <p>Knowledge • Experience • Trust</p>
+            <!-- معرفی -->
 
-        </article>
+            <div class="footer-about">
 
-    </section>
+                <img src="images/logo.png" class="footer-logo">
 
-    <!-- Footer -->
+                <h3>SEHAT Automation</h3>
 
-    <footer>
+                <p>
 
-        <p>Instagram : @sehat_automation</p>
+                 آموزش تخصصی کنترل، اتوماسیون صنعتی و تجهیزات نفت، گاز و پتروشیمی.
 
-        <p>Email : info@sehatautomation.com</p>
+                </p>
 
-        <p>© 2026 SEHAT Automation - تمامی حقوق محفوظ است.</p>
+            </div>
 
-    </footer>
 
-</body>
 
-</html>
+            <!-- دسترسی سریع -->
+
+            <div class="footer-links">
+
+                <h4>دسترسی سریع</h4>
+
+                <ul>
+
+                    <li><a href="#">خانه</a></li>
+
+                    <li><a href="#">دوره‌های آموزشی</a></li>
+
+                    <li><a href="#">مقالات</a></li>
+
+                    <li><a href="#">درباره ما</a></li>
+
+                    <li><a href="#">تماس با ما</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- دسته بندی -->
+
+            <div class="footer-links">
+
+                <h4>دسته‌بندی‌ها</h4>
+
+                <ul>
+
+                    <li><a href="#">PLC</a></li>
+
+                    <li><a href="#">DCS</a></li>
+
+                    <li><a href="#">Instrumentation</a></li>
+
+                    <li><a href="#">Fire & Gas</a></li>
+
+                    <li><a href="#">Utility</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- ارتباط -->
+
+            <div class="footer-contact">
+
+                <h4>ارتباط با ما</h4>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    info@sehatautomation.com
+
+                </p>
+
+                <p>
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    @sehat_automation
+
+                </p>
+
+                <p>
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    LinkedIn
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-divider"></div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 SEHAT Automation | All Rights Reserved
+
+            </p>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!--****************///////////////////////script/////////////////////////**************-->
+<script>
+
+const menuBtn = document.querySelector(".menu-toggle");
+
+const nav = document.querySelector(".main-nav");
+
+
+menuBtn.addEventListener("click",()=>{
+
+    nav.classList.toggle("active");
+
+
+});
+
+
+</script>
