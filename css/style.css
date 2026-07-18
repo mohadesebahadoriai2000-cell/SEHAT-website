@@ -223,7 +223,7 @@ nav a:hover{
         rgba(0,0,0,0) 100%
     ),
 
-    url("../images/hero2.png");
+    url("../images/hero2.webp");
 
     background-size:cover;
 
@@ -647,12 +647,15 @@ nav a:hover{
     padding:0 20px;
 
     position:relative;
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
 
 }
 
 
 
-.feature:not(:last-child)::after{
+.features > .reveal:not(:last-child) .feature::after{
 
     content:"";
 
@@ -765,33 +768,26 @@ nav a:hover{
 
 .course-card{
 
-    width:320px;
-
-    background:#0f1d2b;
-
-    border-radius:18px;
-
-    overflow:hidden;
-
-    border:
-
-    1px solid rgba(255,255,255,.08);
-
-
-    transition:.35s;
-
+     width:320px;
+     background:#0f1d2b;
+     border-radius:18px;
+     overflow:hidden;
+     border:1px solid rgba(255,255,255,.08);
+  
+     transition:
+     transform .5s cubic-bezier(.22,1,.36,1),
+     box-shadow .5s cubic-bezier(.22,1,.36,1);
 }
 
 
 
 .course-card:hover{
 
-    transform:translateY(-8px);
-
     box-shadow:
-
-    0 20px 35px rgba(0,0,0,.35);
-
+    0 18px 35px rgba(0,0,0,.25);
+    transform:
+    translateY(-5px)
+    scale(1.015);
 }
 
 
@@ -939,36 +935,27 @@ nav a:hover{
 
 .resource-card{
 
-    background:white;
-
-    padding:35px;
-
-    border-radius:22px;
-
-
-    box-shadow:
-
-    0 15px 35px rgba(0,0,0,.08);
-
-
     display:flex;
-
     flex-direction:column;
-
-
-    transition:.35s;
-
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+    transition:
+    transform .5s cubic-bezier(.22,1,.36,1),
+    box-shadow .5s cubic-bezier(.22,1,.36,1);
 }
 
 
 
 .resource-card:hover{
 
-    transform:translateY(-10px);
-
     box-shadow:
-
-    0 20px 45px rgba(0,0,0,.15);
+    0 20px 45px rgba(0,0,0,.12);
+    transform:
+    translateY(-5px)
+    scale(1.015);
 
 }
 
@@ -1172,7 +1159,7 @@ nav a:hover{
     ),
 
 
-    url("../images/cta.png");
+    url("../images/cta.webp");
 
 
     background-size:cover;
@@ -1751,11 +1738,12 @@ footer{
 .reveal{
 
     opacity:0;
-
-    transform:translateY(60px);
+    position:relative;
+    transform:translateY(50px);
 
     transition:
-    1s ease;
+    opacity .8s ease,
+    transform .8s cubic-bezier(.22,1,.36,1);
 
 }
 

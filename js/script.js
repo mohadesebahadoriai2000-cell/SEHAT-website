@@ -93,7 +93,7 @@ window.addEventListener("scroll", () => {
         const elementTop = element.getBoundingClientRect().top;
 
 
-        if(elementTop < windowHeight - 100){
+        if(elementTop < windowHeight - 150){
 
             element.classList.add("active");
 
