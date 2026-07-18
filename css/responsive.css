@@ -503,8 +503,7 @@ nav.main-nav.active{
 
 
 
-.feature:not(:last-child)::after{
-
+.features > .reveal .feature::after{
 
     display:none;
 
@@ -993,6 +992,11 @@ footer{
 
 }
 
+.reveal{
+
+        transition-duration:.6s;
+
+    }
 
 
 }

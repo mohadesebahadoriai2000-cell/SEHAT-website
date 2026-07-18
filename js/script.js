@@ -1,4 +1,3 @@
-
 // =================================
 // SEHAT Automation JavaScript
 // =================================
@@ -13,9 +12,24 @@ const navLinks = document.querySelectorAll(".main-nav a");
 
 
 
-// Open / Close Menu
+// Close Menu Function
+
+function closeMenu(){
+
+    mainNav.classList.remove("active");
+
+    menuIcon.classList.remove("fa-xmark");
+
+    menuIcon.classList.add("fa-bars");
+
+}
+
+
+
+// Toggle Menu
 
 menuToggle.addEventListener("click", () => {
+
 
     mainNav.classList.toggle("active");
 
@@ -23,77 +37,68 @@ menuToggle.addEventListener("click", () => {
     if(mainNav.classList.contains("active")){
 
         menuIcon.classList.remove("fa-bars");
+
         menuIcon.classList.add("fa-xmark");
 
-    }else{
+    }
+    else{
 
         menuIcon.classList.remove("fa-xmark");
+
         menuIcon.classList.add("fa-bars");
 
     }
+
 
 });
 
 
 
-// Close Menu After Clicking Link
+// Close After Link Click
 
 navLinks.forEach(link => {
 
-    link.addEventListener("click", () => {
-
-        mainNav.classList.remove("active");
-
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
-
-    });
+    link.addEventListener("click", closeMenu);
 
 });
 
 
 
-// Close Menu When Clicking Outside
+// Close Outside Click
 
-document.addEventListener("click", (event) => {
-
-
-    const clickedOutside = 
-    !mainNav.contains(event.target) &&
-    !menuToggle.contains(event.target);
+document.addEventListener("click", (event)=>{
 
 
+    if(
+        !mainNav.contains(event.target) &&
+        !menuToggle.contains(event.target)
+    ){
 
-    if(clickedOutside){
-
-        mainNav.classList.remove("active");
-
-        menuIcon.classList.remove("fa-xmark");
-        menuIcon.classList.add("fa-bars");
+        closeMenu();
 
     }
 
+
 });
+
 
 
 // Scroll Reveal
 
-
 const reveals = document.querySelectorAll(".reveal");
 
 
-window.addEventListener("scroll", () => {
+window.addEventListener("scroll", ()=>{
 
 
-    reveals.forEach(element => {
+    reveals.forEach(element=>{
 
 
-        const windowHeight = window.innerHeight;
+        const elementTop =
+        element.getBoundingClientRect().top;
 
-        const elementTop = element.getBoundingClientRect().top;
 
-
-        if(elementTop < windowHeight - 150){
+        if(elementTop < window.innerHeight - 150){
 
             element.classList.add("active");
 
@@ -104,12 +109,3 @@ window.addEventListener("scroll", () => {
 
 
 });
-// Variables
-
-
-
-
-// Scroll Effects
-
-
-// Future Functions

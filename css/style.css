@@ -647,9 +647,6 @@ nav a:hover{
     padding:0 20px;
 
     position:relative;
-    transition:
-    transform .35s ease,
-    box-shadow .35s ease;
 
 }
 
@@ -1757,15 +1754,6 @@ footer{
 }
 
 /* Stagger Animation */
-
-.feature,
-.course-card,
-.resource-card{
-
-    transition-delay:0s;
-
-}
-
 
 .feature:nth-child(1),
 .course-card:nth-child(1),
