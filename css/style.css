@@ -100,7 +100,73 @@ img{
 
 }
 
+/* Floating Support */
 
+.support-button{
+
+    position:fixed;
+
+    bottom:30px;
+
+    left:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--orange);
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    box-shadow:
+    0 10px 30px rgba(242,139,33,.4);
+
+    transition:.3s ease;
+    animation:
+    supportPulse 3s infinite;
+
+}
+@keyframes supportPulse{
+
+    0%,100%{
+
+        box-shadow:
+        0 10px 30px rgba(242,139,33,.4);
+
+    }
+
+
+    50%{
+
+        box-shadow:
+        0 10px 40px rgba(242,139,33,.7);
+
+    }
+
+}
+
+.support-button i{
+
+    font-size:20px;
+
+}
+
+
+.support-button:hover{
+
+    transform:translateY(-5px);
+
+}
 
 /* =====================================================
    4. HEADER
@@ -199,7 +265,69 @@ nav a:hover{
     transform:translateY(-3px);
 
 }
+/* Header Actions */
 
+.header-actions{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+
+.btn-login,
+.btn-register{
+
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s ease;
+
+}
+
+
+/* Login */
+
+.btn-login{
+
+    color:white;
+    border:1px solid rgba(242,139,33,.5);
+
+}
+
+
+.btn-login:hover{
+
+    background:rgba(242,139,33,.1);
+    color:var(--orange);
+
+}
+
+
+/* Register */
+
+.btn-register{
+
+    background:var(--orange);
+    color:white;
+
+    box-shadow:
+    0 8px 20px rgba(242,139,33,.3);
+
+}
+
+
+.btn-register:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 12px 25px rgba(242,139,33,.45);
+
+}
 
 
 /* =====================================================
@@ -1323,18 +1451,25 @@ nav a:hover{
 ===================================================== */
 
 
+/* ===========================
+      FOOTER BANNER
+=========================== */
+
+
 .footer-banner{
 
-    background:
+    position:relative;
+    overflow:hidden;
 
+    background:
     linear-gradient(
-        100deg,
-        #f28b21,
-        #ff9f2e
+        120deg,
+        #f28b21 0%,
+        #f28b21 45%,
+        #d96d12 100%
     );
 
-
-    padding:90px 20px;
+    padding:55px 20px;
 
     text-align:center;
 
@@ -1344,15 +1479,44 @@ nav a:hover{
 
 
 
+/* subtle industrial glow */
+
+.footer-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:
+    rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    top:-180px;
+
+    right:-100px;
+
+    filter:blur(40px);
+
+}
+
+
+
 .footer-banner h2{
 
-    font-size:36px;
+    position:relative;
+
+    font-size:32px;
 
     font-weight:700;
 
     letter-spacing:2px;
 
-    margin-bottom:10px;
+    margin-bottom:8px;
 
 }
 
@@ -1360,15 +1524,13 @@ nav a:hover{
 
 .footer-banner p{
 
-    font-size:18px;
+    position:relative;
+
+    font-size:16px;
 
     opacity:.9;
 
 }
-
-
-
-
 
 /* =====================================================
    12. FOOTER
