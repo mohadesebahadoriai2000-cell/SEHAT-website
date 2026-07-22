@@ -893,7 +893,7 @@ nav a:hover{
 
 .course-card{
 
-     width:320px;
+     width:380px;
      background:#0f1d2b;
      border-radius:18px;
      overflow:hidden;
@@ -922,6 +922,7 @@ nav a:hover{
     position:relative;
 
     overflow:hidden;
+    height: 240px;
 
 }
 
@@ -1469,7 +1470,7 @@ nav a:hover{
         #d96d12 100%
     );
 
-    padding:55px 20px;
+    padding:60px 20px;
 
     text-align:center;
 
@@ -1957,5 +1958,825 @@ footer{
 .feature:nth-child(6){
 
     transition-delay:.5s;
+
+}
+
+/* =====================================================
+   COURSES PAGE
+===================================================== */
+
+/* ================= PAGE HERO ================= */
+
+
+.courses-hero{
+
+    height:380px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.75)
+    ),
+    url("../images/hero2.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+
+.page-hero-content span{
+
+    color:var(--orange);
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+.page-hero-content h1{
+
+    font-size:45px;
+
+    margin:20px 0;
+
+}
+
+
+
+.page-hero-content p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+}
+
+
+
+/* ================= FILTER ================= */
+
+
+.course-filter{
+
+    padding:30px 0;
+
+    background:white;
+
+}
+
+
+
+.filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.filter-buttons button{
+
+    border:none;
+
+    background:#f5f5f5;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    transition:.3s ease;
+
+}
+
+
+
+.filter-buttons button:hover,
+.filter-buttons .active{
+
+    background:var(--orange);
+
+    color:white;
+
+}
+
+
+
+
+/* ================= COURSES SECTION ================= */
+
+
+.courses-page{
+
+    padding:70px 0;
+
+    background:#f8f9fb;
+
+}
+
+
+
+
+.courses-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:30px;
+
+}
+
+
+
+
+
+/* ================= COURSE CARD ================= */
+
+
+.course-card{
+
+    width:320px;
+
+    background:white;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+
+
+.course-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+
+
+/* ================= IMAGE ================= */
+
+
+.course-image{
+
+    position:relative;
+
+    height:210px;
+
+}
+
+
+
+.course-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+.badge{
+
+    position:absolute;
+
+    top:15px;
+
+    
+
+    background:var(--orange);
+
+    color:white;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+/* ================= CONTENT ================= */
+
+
+.course-content{
+
+    padding:25px;
+
+}
+
+
+
+.course-content h3{
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.course-content p{
+
+    color:#666;
+
+    line-height:1.9;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+.course-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:20px 0;
+
+    padding-top:15px;
+
+    border-top:
+
+    1px solid #eee;
+
+    font-size:13px;
+
+}
+
+
+
+.course-info i{
+
+    color:var(--orange);
+
+    margin-left:5px;
+
+}
+
+
+
+
+
+.course-btn{
+
+    display:block;
+
+    text-align:center;
+
+    background:var(--orange);
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+
+
+.course-btn:hover{
+
+    background:#d96d12;
+
+}
+
+
+
+
+
+/* ================= COMING COURSES ================= */
+
+
+.coming-course{
+
+    margin-top:40px;
+
+    padding:25px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:20px;
+
+    border:
+
+    1px dashed #ddd;
+
+}
+
+
+
+.coming-course i{
+
+    font-size:40px;
+
+    color:var(--orange);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.coming-course h3{
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.coming-course p{
+
+    color:#777;
+
+}
+
+
+
+
+
+/* ================= COURSE CTA ================= */
+
+
+.course-cta{
+
+    padding:80px 0;
+
+}
+
+
+
+.course-cta .cta-box{
+
+    background:
+
+    linear-gradient(
+        120deg,
+        rgba(242,139,33,.8),
+        rgba(217,109,18,.85)
+    ),
+    url("../images/hero2.webp");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+    color:white;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+}
+
+
+
+.course-cta h2{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.course-cta p{
+
+    font-size:17px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.course-cta .btn{
+
+    background:white;
+
+    color:var(--orange);
+
+}
+
+
+
+/* =====================================================
+   ABOUT PAGE
+===================================================== */
+
+
+/* ================= ABOUT HERO ================= */
+
+
+.about-hero{
+
+    height:380px;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.75)
+    ),
+
+    url("../images/about-bg.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+
+.about-hero .page-hero-content span{
+
+    color:var(--orange);
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+.about-hero h1{
+
+    font-size:45px;
+
+    margin:20px 0;
+
+}
+
+
+.about-hero p{
+
+    color:#ddd;
+
+    font-size:17px;
+
+}
+
+
+
+
+
+/* ================= STORY SECTION ================= */
+
+
+.about-story{
+
+    padding:90px 0;
+
+    background:#fff;
+
+}
+
+
+.story-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+
+
+.story-image img{
+
+    width:100%;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 20px 40px rgba(0,0,0,.12);
+
+}
+
+
+
+.story-content span{
+
+    color:var(--orange);
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+.story-content h2{
+
+    font-size:34px;
+
+    margin:20px 0;
+
+}
+
+
+
+.story-content p{
+
+    color:#555;
+
+    line-height:2.2;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ================= VALUES ================= */
+
+
+.about-values{
+
+    padding:80px 0;
+
+    background:#f7f8fa;
+
+}
+
+
+
+.values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.value-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.07);
+
+    transition:.3s ease;
+
+}
+
+
+
+.value-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.value-card i{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:rgba(242,139,33,.12);
+
+    color:var(--orange);
+
+    font-size:30px;
+
+}
+
+
+
+.value-card h3{
+
+    margin:20px 0 10px;
+
+    font-size:21px;
+
+}
+
+
+
+.value-card p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ================= MISSION ================= */
+
+
+.about-mission{
+
+    padding:80px 0;
+
+}
+
+
+
+.mission-box{
+
+    background:
+
+    linear-gradient(
+        120deg,
+        rgba(242,139,33,.95),
+        rgba(217,109,18,.9)
+    );
+
+    padding:60px 40px;
+
+    border-radius:25px;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.mission-box h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.mission-box p{
+
+    font-size:17px;
+
+    line-height:2;
+
+}
+
+
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+
+.about-hero{
+
+    height:300px;
+
+}
+
+
+.about-hero h1{
+
+    font-size:30px;
+
+}
+
+
+.story-grid{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+
+}
+
+
+.story-content{
+
+    text-align:center;
+
+}
+
+
+
+.values-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.mission-box{
+
+    padding:40px 20px;
+
+}
+
 
 }
